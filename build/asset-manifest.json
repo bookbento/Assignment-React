@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f89a2ce6.css",
+    "main.js": "/static/js/main.45316986.js",
+    "static/media/shirt.jpg": "/static/media/shirt.3af8196b6de06329395a.jpg",
+    "static/media/skirt.jpg": "/static/media/skirt.14a08a3d5f376124c05a.jpg",
+    "static/media/necklace.jpg": "/static/media/necklace.72254fc30f89fe0ae2fd.jpg",
+    "static/media/suit.jpg": "/static/media/suit.f631903d299408140061.jpg",
+    "static/media/shoes.jpg": "/static/media/shoes.9f31795e872c33965bfd.jpg",
+    "static/media/watch.jpg": "/static/media/watch.d7300115a48570c55ad4.jpg",
+    "static/media/purse.jpg": "/static/media/purse.e612821b2f60d33a9648.jpg",
+    "static/media/sun-glasses.jpg": "/static/media/sun-glasses.2f13fb89db84b1ffa4c9.jpg",
+    "static/media/ring.jpg": "/static/media/ring.a5f9152c912b6d265d8f.jpg",
+    "index.html": "/index.html",
+    "main.f89a2ce6.css.map": "/static/css/main.f89a2ce6.css.map",
+    "main.45316986.js.map": "/static/js/main.45316986.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f89a2ce6.css",
+    "static/js/main.45316986.js"
+  ]
+}
