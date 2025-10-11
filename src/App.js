@@ -1,17 +1,16 @@
-import React from 'react';
-
-import Navbar from './feature/Navbar';
-import Container from './feature/Container';
-import Home from './feature/Home';
+import Navbar from "./features/Navbar";
+import Container from "./features/Container"; 
+import Home from "./features/Home";
+import { Fragment } from "react/jsx-runtime";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Container>
-        <Home />
-      </Container>
-    </div>
+      <>
+    <Navbar />
+    <Container>
+      <Home />
+    </Container>
+    </>
   );
 }
 
