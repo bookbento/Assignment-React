@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import Product from './Product';
 import AddForm from './Product/AddForm';
 
 let currentProductId = 9;
 
-export default function Home() {
+function Home({ className }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
     async function getProducts() {
       const products = await axios.get(
-        'https://apimocha.com/react-redux-class/products'
+        'https://68eb581076b3362414cd6ad2.mockapi.io/products'
       );
       setProducts(products.data);
     }
@@ -26,7 +28,7 @@ export default function Home() {
   }
 
   return (
-    <>
+    <div className={className}>
       <h1>New Products</h1>
       {products.length > 0 ? (
         <ul className="Home__products">
@@ -38,6 +40,21 @@ export default function Home() {
         <div>Loading products....</div>
       )}
       <AddForm addProduct={addProduct} />
-    </>
+    </div>
   );
 }
+
+Home.propTypes = {
+  className: PropTypes.string.isRequired,
+};
+
+export default styled(Home)`
+  .Home__products {
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0 -12px;
+  }
+`;
